@@ -50,8 +50,16 @@ At 2015/05/13 (2.6/3.0 Branch) this plugin is renamed from redmine_issue_reminde
 
 * Clone this repository into ```redmine/plugins/redmine_mail_reminder```
 * Install dependencies and migrate database
+	
+Add this line to your application's Gemfile:
+
+    	gem 'rails-dom-testing'
+		
+then:
+		
 	```console
 	cd redmine/
+	bundle
 	bundle install
 	RAILS_ENV=production rake redmine:plugins:migrate
 	```
